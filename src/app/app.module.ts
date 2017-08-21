@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CategoryComponent } from './category/category.component';
 import { routing } from './app.routing';
+import { ListingComponent } from './listing/listing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CategoryComponent
+    CategoryComponent,
+    ListingComponent
   ],
   imports: [
     BrowserModule,
