@@ -27,6 +27,12 @@ export class CategoryComponent implements OnInit {
     this.categories = this.categoryService.getCategories();
   }
 
+  goToListingsPage(clickedCategory: Category) {
+    this.router.navigate(['categories', clickedCategory.categoryId]);
+  }
+
+  
+
   listings: Listing[];
   categories: Category[];
 
