@@ -33,6 +33,9 @@ export class ListingComponent implements OnInit {
     this.listingsToDisplay = this.listingService.getAllListingsById(this.categoryId);
   }
 
+  
+  //need to import clickedCategory into this too so it doesn't read :categoryId literally.
+  //HOW DO YOU PUT DIGIT PLACE MARKERS % IN ANGULAR LIKE WITH SPARK????
   goToDetailsPage(clickedListing: Listing) {
     this.router.navigate(['categories/:categoryId/listings', clickedListing.listingId]);
   }
