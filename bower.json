@@ -6,7 +6,7 @@
     "Mick Sexton <lacrookedbeat@hotmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/PioneerX1/craigslist",
   "ignore": [
     "**/.*",
     "node_modules",

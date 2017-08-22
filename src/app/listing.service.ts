@@ -21,4 +21,14 @@ export class ListingService {
     return output;
   }
 
+  getListingById(inputId: number) {
+    var selectedListing: Listing;
+    for(var i = 0; i < LISTINGS.length; i++) {
+      if(LISTINGS[i].listingId === inputId) {
+        selectedListing = LISTINGS[i];
+      }
+    }
+    return selectedListing;
+  }
+
 }

@@ -3,6 +3,7 @@ export class Listing {
     public title: string,
     public email: string,
     public description: string,
-    public categoryId: number
+    public categoryId: number,
+    public listingId: number
   ) { }
 }

@@ -1,7 +1,6 @@
 <h2>View Listings in this Category: </h2>
+<hr>
 
-<div class="panel panel-default">
-  <ul *ngFor="let listing of listings">
-    
-  </ul>
+<div *ngFor="let listing of listingsToDisplay" (click)="goToDetailsPage(listing)" class="panel panel-default">
+  <h4>{{listing.title}}</h4>
 </div>
